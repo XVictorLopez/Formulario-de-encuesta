@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encuesta de Satisfacción</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1 id="title">Encuesta de Satisfacción</h1>
+  <p id="description">Gracias por tomarte el tiempo para ayudarnos a mejorar con esta breve encuesta.</p>
+
+  <form id="survey-form">
+    <!-- Nombre -->
+    <label for="name" id="name-label">Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required />
+
+    <!-- Email -->
+    <label for="email" id="email-label">Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
+
+    <!-- Número -->
+    <label for="number" id="number-label">Edad (entre 18 y 99):</label>
+    <input type="number" id="number" name="number" placeholder="Tu edad" min="18" max="99" />
+
+    <!-- Dropdown -->
+    <label for="dropdown">¿Cómo calificas nuestro servicio?</label>
+    <select id="dropdown" name="calificacion">
+      <option value="excelente">Excelente</option>
+      <option value="bueno">Bueno</option>
+      <option value="regular">Regular</option>
+      <option value="malo">Malo</option>
+    </select>
+
+    <!-- Botones de radio -->
+    <p>¿Recomendarías nuestro servicio?</p>
+    <label><input type="radio" name="recomienda" value="sí" /> Sí</label>
+    <label><input type="radio" name="recomienda" value="no" /> No</label>
+
+    <!-- Checkboxes -->
+    <p>¿Qué aspectos te gustaron? (puedes elegir más de uno)</p>
+    <label><input type="checkbox" value="rapidez" /> Rapidez</label>
+    <label><input type="checkbox" value="atencion" /> Atención</label>
+    <label><input type="checkbox" value="calidad" /> Calidad del servicio</label>
+
+    <!-- Textarea -->
+    <p>Comentarios adicionales:</p>
+    <textarea name="comentarios" rows="4" cols="30" placeholder="Escribe tus sugerencias o comentarios aquí..."></textarea>
+
+    <!-- Botón de envío -->
+    <button type="submit" id="submit">Enviar Encuesta</button>
+  </form>
+
+</body>
+</html>
